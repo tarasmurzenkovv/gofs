@@ -1,4 +1,4 @@
-package pubsub;
+package observer;
 
 import com.taras.murzenkov.behavior.observer.Publisher;
 import com.taras.murzenkov.behavior.observer.Subscriber;
