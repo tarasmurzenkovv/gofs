@@ -1,8 +1,9 @@
 package pubsub;
 
-import com.taras.murzenkov.observer.Publisher;
-import com.taras.murzenkov.observer.impl.PublisherImpl;
-import com.taras.murzenkov.observer.impl.SubscriberImpl;
+import com.taras.murzenkov.behavior.observer.Publisher;
+import com.taras.murzenkov.behavior.observer.Subscriber;
+import com.taras.murzenkov.behavior.observer.impl.PublisherImpl;
+import com.taras.murzenkov.behavior.observer.impl.SubscriberImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -14,7 +15,7 @@ import static org.mockito.Mockito.*;
 
 
 public class PublisherSubscriberTest {
-    private Publisher<SubscriberImpl> sut = new PublisherImpl();
+    private Publisher<Subscriber> sut = new PublisherImpl();
     private List<SubscriberImpl> subscribers;
 
     @Before
