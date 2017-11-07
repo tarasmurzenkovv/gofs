@@ -1,9 +1,9 @@
 package observer;
 
-import com.taras.murzenkov.behavior.observer.Publisher;
-import com.taras.murzenkov.behavior.observer.Subscriber;
-import com.taras.murzenkov.behavior.observer.impl.PublisherImpl;
-import com.taras.murzenkov.behavior.observer.impl.SubscriberImpl;
+import com.taras.murzenkov.behavior.observer.code.Publisher;
+import com.taras.murzenkov.behavior.observer.code.Subscriber;
+import com.taras.murzenkov.behavior.observer.code.impl.PublisherImpl;
+import com.taras.murzenkov.behavior.observer.code.impl.SubscriberImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

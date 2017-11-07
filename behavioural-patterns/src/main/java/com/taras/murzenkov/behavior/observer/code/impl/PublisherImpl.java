@@ -1,7 +1,7 @@
-package com.taras.murzenkov.behavior.observer.impl;
+package com.taras.murzenkov.behavior.observer.code.impl;
 
-import com.taras.murzenkov.behavior.observer.Publisher;
-import com.taras.murzenkov.behavior.observer.Subscriber;
+import com.taras.murzenkov.behavior.observer.code.Publisher;
+import com.taras.murzenkov.behavior.observer.code.Subscriber;
 
 import java.util.ArrayList;
 import java.util.List;

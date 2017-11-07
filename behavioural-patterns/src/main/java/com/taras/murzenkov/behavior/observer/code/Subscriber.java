@@ -1,4 +1,4 @@
-package com.taras.murzenkov.behavior.observer;
+package com.taras.murzenkov.behavior.observer.code;
 
 /**
  * Provides the api that will be called by the {@link Publisher}.

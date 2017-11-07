@@ -1,4 +1,4 @@
-package com.taras.murzenkov.behavior.observer;
+package com.taras.murzenkov.behavior.observer.code;
 
 /**
  * Simple 'Publisher' interface (in pattern Publisher-Subscriber).

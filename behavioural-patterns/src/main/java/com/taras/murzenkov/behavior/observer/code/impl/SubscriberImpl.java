@@ -1,6 +1,6 @@
-package com.taras.murzenkov.behavior.observer.impl;
+package com.taras.murzenkov.behavior.observer.code.impl;
 
-import com.taras.murzenkov.behavior.observer.Subscriber;
+import com.taras.murzenkov.behavior.observer.code.Subscriber;
 
 public class SubscriberImpl implements Subscriber {
     @Override
