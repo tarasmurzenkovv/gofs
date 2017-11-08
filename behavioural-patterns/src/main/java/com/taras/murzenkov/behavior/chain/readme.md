@@ -10,3 +10,5 @@ Here we process a series of objects one by one (i.e., in a sequential manner). A
 processing. With this pattern, we constitute a chain where each of the processing objects can have some logic
 to handle a particular type of command object. After one’s processing is done, if anything is still pending, it
 can be forwarded to the next object in the chain. We can add new objects anytime at the end of a chain.
+
+[back](https://github.com/terancet/gofs)
