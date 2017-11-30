@@ -4,6 +4,7 @@ import com.taras.murzenkov.behavior.observer.code.Publisher;
 import com.taras.murzenkov.behavior.observer.code.Subscriber;
 import com.taras.murzenkov.behavior.observer.code.impl.PublisherImpl;
 import com.taras.murzenkov.behavior.observer.code.impl.SubscriberImpl;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
@@ -11,13 +12,23 @@ import org.mockito.Mockito;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.doCallRealMethod;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.verifyNoMoreInteractions;
 
-
+/**
+ * UTs for the {@link Publisher} and {@link Subscriber}.
+ *
+ * @author Taras_Murzenkov
+ */
 public class PublisherSubscriberTest {
+
     private Publisher<Subscriber> sut = new PublisherImpl();
     private List<SubscriberImpl> subscribers;
 
+    /**
+     * Performs the initialisation of all required variables.
+     */
     @Before
     public void initMocks() {
         List<SubscriberImpl> listOfMocks = new ArrayList<>();

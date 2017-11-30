@@ -1,21 +1,26 @@
 package com.taras.murzenkov.behavior.chain.code.impl.filter;
 
+import static java.util.Optional.ofNullable;
+
 import com.taras.murzenkov.behavior.chain.code.Filter;
 
-public class FilterOnlyNumbers implements Filter {
-    private Filter next;
+/**
+ * This implementation of the {@link Filter} do filters numbers from the given {@link String}.
+ *
+ * @author Taras_Murzenkov
+ */
+public class FilterOnlyNumbers implements Filter<String> {
+
+    private Filter<String> next;
 
     @Override
-    public void doFilter(String message) {
-        System.out.println(message);
-        if(next != null){
-            System.out.println("Filters only numbers");
-            this.next.doFilter(message);
-        }
+    public void doFilter(final String source) {
+        ofNullable(this.next)
+            .ifPresent(stringFilter -> stringFilter.doFilter(source));
     }
 
     @Override
-    public void next(Filter filter) {
+    public void next(final Filter<String> filter) {
         this.next = filter;
     }
 }

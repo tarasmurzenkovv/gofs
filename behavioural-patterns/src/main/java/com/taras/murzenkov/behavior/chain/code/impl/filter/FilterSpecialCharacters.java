@@ -1,19 +1,25 @@
 package com.taras.murzenkov.behavior.chain.code.impl.filter;
 
+import static java.util.Optional.ofNullable;
+
 import com.taras.murzenkov.behavior.chain.code.Filter;
 
-public class FilterSpecialCharacters implements Filter {
-    private Filter next;
+/**
+ * This implementation of the {@link Filter} do filters special characters from the given {@link String}.
+ *
+ * @author Taras_Murzenkov
+ */
+public class FilterSpecialCharacters implements Filter<String> {
+
+    private Filter<String> next;
 
     @Override
     public void doFilter(String message) {
-        System.out.println(message);
-        System.out.println("Filters only special characters");
-        this.next.doFilter(message);
+        ofNullable(this.next).ifPresent(filter -> filter.doFilter(message));
     }
 
     @Override
-    public void next(Filter filter) {
+    public void next(Filter<String> filter) {
         this.next = filter;
     }
 }
