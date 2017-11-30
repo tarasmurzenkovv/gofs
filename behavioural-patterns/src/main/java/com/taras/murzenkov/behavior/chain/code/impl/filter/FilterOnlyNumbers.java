@@ -1,5 +1,6 @@
 package com.taras.murzenkov.behavior.chain.code.impl.filter;
 
+
 import static java.util.Optional.ofNullable;
 
 import com.taras.murzenkov.behavior.chain.code.Filter;
