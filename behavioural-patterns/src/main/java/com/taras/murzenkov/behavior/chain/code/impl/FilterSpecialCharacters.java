@@ -1,4 +1,4 @@
-package com.taras.murzenkov.behavior.chain.code.impl.filter;
+package com.taras.murzenkov.behavior.chain.code.impl;
 
 
 import static java.util.Optional.ofNullable;
@@ -16,7 +16,8 @@ public class FilterSpecialCharacters implements Filter<String> {
 
     @Override
     public void doFilter(String message) {
-        ofNullable(this.next).ifPresent(filter -> filter.doFilter(message));
+        ofNullable(this.next)
+            .ifPresent(filter -> filter.doFilter(message));
     }
 
     @Override

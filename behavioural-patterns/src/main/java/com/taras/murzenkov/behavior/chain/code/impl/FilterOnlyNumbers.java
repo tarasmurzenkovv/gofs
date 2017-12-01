@@ -1,5 +1,4 @@
-package com.taras.murzenkov.behavior.chain.code.impl.filter;
-
+package com.taras.murzenkov.behavior.chain.code.impl;
 
 import static java.util.Optional.ofNullable;
 
@@ -16,12 +15,21 @@ public class FilterOnlyNumbers implements Filter<String> {
 
     @Override
     public void doFilter(final String source) {
-        ofNullable(this.next)
-            .ifPresent(stringFilter -> stringFilter.doFilter(source));
+        final String withoutNumbersString = filterOutNumbers(source);
+        delegateToNextFilter(withoutNumbersString);
     }
 
     @Override
     public void next(final Filter<String> filter) {
         this.next = filter;
+    }
+
+    private String filterOutNumbers(final String source) {
+        return source.replaceAll("\\d+", "");
+    }
+
+    private void delegateToNextFilter(final String withoutNumbersString) {
+        ofNullable(this.next)
+            .ifPresent(stringFilter -> stringFilter.doFilter(withoutNumbersString));
     }
 }
