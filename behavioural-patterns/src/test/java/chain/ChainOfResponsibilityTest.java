@@ -25,6 +25,9 @@ public class ChainOfResponsibilityTest {
     private Filter<String> specialCharactersFilter = Mockito.mock(FilterSpecialCharacters.class);
     private Filter<String> sut;
 
+    /**
+     * Tetst setup.
+     */
     @Before
     public void initFilterChain() {
         this.sut = buildFilterChain();
