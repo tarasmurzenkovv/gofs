@@ -3,9 +3,6 @@ package com.taras.murzenkov.behavior.command.code.impl;
 import com.taras.murzenkov.behavior.command.code.Agent;
 import com.taras.murzenkov.behavior.command.code.Order;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
