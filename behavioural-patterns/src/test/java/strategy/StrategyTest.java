@@ -18,6 +18,11 @@ import java.math.BigDecimal;
  */
 public class StrategyTest {
     private DiscountCalculationService discountCalculationService;
+
+    /**
+     * Inits mocks.
+     *
+     */
     @Before
     public void initStrategies() {
         this.discountCalculationService = new DiscountCalculationServiceImpl();
