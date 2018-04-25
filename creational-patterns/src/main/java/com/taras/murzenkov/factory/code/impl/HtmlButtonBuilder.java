@@ -1,12 +1,23 @@
 package com.taras.murzenkov.factory.code.impl;
 
+import com.taras.murzenkov.factory.code.Button;
 import com.taras.murzenkov.factory.code.ButtonBuilder;
 import com.taras.murzenkov.factory.code.model.HtmlButton;
 
-import java.util.function.Supplier;
 
+/**
+ * Builds the {@link HtmlButton}.
+ *
+ * @author Taras Murzenkov
+ */
 public class HtmlButtonBuilder implements ButtonBuilder {
-    public HtmlButton get() {
+
+    /**
+     * Builds the {@link HtmlButton}.
+     *
+     * @return {@link HtmlButton}.
+     */
+    public Button get() {
         return new HtmlButton();
     }
 }

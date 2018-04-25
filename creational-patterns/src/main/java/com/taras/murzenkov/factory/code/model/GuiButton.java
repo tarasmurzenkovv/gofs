@@ -2,9 +2,15 @@ package com.taras.murzenkov.factory.code.model;
 
 import com.taras.murzenkov.factory.code.Button;
 
+/**
+ * Gui button.
+ *
+ * @author Taras Murzenkov
+ */
 public class GuiButton implements Button {
     private StringBuilder stringBuilder = new StringBuilder();
-    private int x,y, w, h;
+    private int x, y, w, h;
+
     @Override
     public String render() {
         return stringBuilder.append("GuiButtonInfo Coordinates: ={")

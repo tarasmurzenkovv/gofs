@@ -20,7 +20,8 @@ public interface ButtonFactory {
 
     /**
      * Registers the supplier aka builder to extend the {@link ButtonFactory} functionality.
-     * @param builder {@link Supplier}
+     *
+     * @param builder    {@link Supplier}
      * @param buttonType {@link ButtonType}
      */
     void register(ButtonType buttonType, Supplier<Button> builder);

@@ -9,6 +9,11 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.function.Supplier;
 
+/**
+ * Impl of the {@link ButtonFactory}.
+ *
+ * @author Taras Murzenkov
+ */
 public class ButtonFactoryImpl implements ButtonFactory {
     private Map<ButtonType, Supplier<Button>> buttons = new HashMap<>();
 

@@ -1,5 +1,10 @@
 package com.taras.murzenkov.factory.code.model;
 
-public enum  ButtonType {
-    HTML, GUI;
+/**
+ * Types of the buttons.
+ *
+ * @author Taras Murzenkov
+ */
+public enum ButtonType {
+    HTML, GUI
 }

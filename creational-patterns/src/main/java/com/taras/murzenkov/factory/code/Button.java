@@ -1,7 +1,7 @@
 package com.taras.murzenkov.factory.code;
 
 /**
- * Defines the type of the button
+ * Defines the type of the button.
  *
  * @author Taras Murzenkov.
  */
