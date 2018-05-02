@@ -11,7 +11,7 @@ This repo contains the basic implementations of the GoF design patterns.
 4. [Strategy](https://github.com/terancet/gofs/tree/master/behavioural-patterns/src/main/java/com/taras/murzenkov/behavior/strategy)
 5. [Command](https://github.com/terancet/gofs/tree/master/behavioural-patterns/src/main/java/com/taras/murzenkov/behavior/command)
 ## Structural Patterns
-1. Proxy
+1. [Proxy](https://github.com/terancet/gofs/tree/master/structural-patterns/src/main/java/com/taras/murzenkov/proxy)
 2. Decorator
 3. Adapter
 
