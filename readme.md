@@ -10,5 +10,9 @@ This repo contains the basic implementations of the GoF design patterns.
 3. [Chain of Responsibility](https://github.com/terancet/gofs/tree/master/behavioural-patterns/src/main/java/com/taras/murzenkov/behavior/chain)
 4. [Strategy](https://github.com/terancet/gofs/tree/master/behavioural-patterns/src/main/java/com/taras/murzenkov/behavior/strategy)
 5. [Command](https://github.com/terancet/gofs/tree/master/behavioural-patterns/src/main/java/com/taras/murzenkov/behavior/command)
+## Structural Patterns
+1. Proxy
+2. Decorator
+3. Adapter
 
 [![Build Status](https://travis-ci.org/terancet/gofs.svg?branch=master)](https://travis-ci.org/terancet/gofs)
